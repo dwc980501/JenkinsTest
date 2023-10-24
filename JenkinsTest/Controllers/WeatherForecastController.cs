@@ -29,5 +29,14 @@ namespace JenkinsTest.Controllers
             })
             .ToArray();
         }
+
+
+        [HttpGet("GetString")]
+
+        public async Task<string> GetString()
+        {
+            await Task.CompletedTask;
+            return "第一次发布";
+        }
     }
 }
